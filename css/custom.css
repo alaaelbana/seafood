@@ -235,7 +235,7 @@ header>img {
 }
 
 .splide .splide__slide {
-    height: calc(100px + 40vw);
+    height: 100vh;
     position: relative;
 }
 
@@ -318,6 +318,7 @@ header>img {
 .products_bg {
     background-image: url(../imgs/background_white.jpg);
     background-size: 100% auto;
+    position: relative;
 }
 
 .products_cover {
@@ -340,7 +341,7 @@ header>img {
 
 }
 
-.products_cover .products_box_text h4 {
+.products_cover .products_box_text .mune_text {
     font-size: 36px;
     color: rgb(190, 0, 63);
     letter-spacing: 1px;
@@ -465,6 +466,42 @@ header>img {
     background: #cc1b56;
 }
 
+.floating_img {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    pointer-events: none;
+    user-select: none;
+    width: 180px;
+    opacity: .8;
+    animation: float 5s ease-in-out infinite;
+}
+
+.floating_img img {
+    transform: scaleX(-1);
+}
+
+.floating_img.fish {
+    bottom: 30px;
+    right: 30px;
+    top: auto;
+    left: auto;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
 .about_us_box, .contact_us_box {
     display: flex;
     flex-wrap: wrap;
@@ -476,7 +513,7 @@ header>img {
 }
 
 .about_us_box .about_us_text, .contact_us_box .contact_us_text {
-    background-image: url(https://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/01/background-food-truck-page-03.jpg);
+    background-image: url(../imgs/background-food-truck-page-03.jpg);
     background-size: cover;
     padding: 30px 5% 15px 8%;
     position: relative;
@@ -679,6 +716,40 @@ footer .links a {
 }
 
 @media (max-width: 775px) {
+    .splide .splide__slide .slide_text {
+        padding: 0 30;
+        top: calc(50% + 20px);
+    }
+
+    .splide__arrow svg {
+        display: none;
+    }
+
+    .splide .splide__slide .slide_text h1,
+
+    .splide .splide__slide .slide_text[dir="rtl"] h1 {
+        font-size: 28px;
+    }
+
+    .splide .splide__slide .slide_text p,
+    .splide .splide__slide .slide_text[dir="rtl"] p {
+        font-size: 14px;
+        width: 55%;
+        line-height: 1.6;
+    }
+
+    .splide .splide__slide .slide_text a {
+        margin-top: 25px;
+    }
+
+    .floating_img {
+        display: none;
+    }
+
+    .splide .splide__slide {
+        height: 400px;
+    }
+
     .products_box .product {
         width: 48.2%;
     }
@@ -758,7 +829,7 @@ footer .links a {
     }
 
     .home_header .header_links.show {
-        top: 83px;
+        top: 82px;
     }
 
     .header_links.show {
@@ -775,10 +846,6 @@ footer .links a {
         width: 100%;
         padding: 20px 30px;
         border-bottom: 1px solid #eee;
-    }
-
-    .splide .splide__slide .slide_text h1 {
-        font-size: 38px;
     }
 
 
@@ -809,12 +876,50 @@ footer .links a {
 
 
 @media (max-width: 600px) {
-    .products_box .product {
-        height: 52vw;
+    .home_header .header_links.show {
+        top: 73px;
     }
 
-    .splide .splide__slide .slide_text {
-        top: 50%
+    .home_header .logo img {
+        width: 65px;
+    }
+
+    .splide .splide__slide .slide_text h1,
+    .splide .splide__slide .slide_text[dir="rtl"] h1 {
+        font-size: 24px;
+    }
+
+    .splide .splide__slide .slide_text p,
+    .splide .splide__slide .slide_text[dir="rtl"] p {
+        font-size: 13px;
+        width: 75%;
+        line-height: 1.6;
+    }
+
+    .splide .splide__slide .slide_text a {
+        font-size: 12px;
+        padding: 7px 35px;
+    }
+
+    .products_cover .products_box_text .mune_text {
+        font-size: 28px;
+    }
+
+    .products_cover .products_box_text p {
+        font-size: 13px;
+    }
+
+    .products_cover .products_filter_box .filter {
+        font-size: 11px;
+    }
+
+    .products_cover .more_products button {
+        font-size: 13px;
+        padding: 8px 60px;
+    }
+
+    .products_box .product {
+        height: 52vw;
     }
 
     .products_box .product .product_info {
@@ -829,10 +934,7 @@ footer .links a {
         height: calc(200px + 40vw);
     }
 
-    .splide .splide__slide .slide_text h1 {
-        font-size: 30px;
-        padding: 0 14%;
-    }
+
 
     .home_img_box {
         padding: 25px 15px 0;
@@ -843,6 +945,31 @@ footer .links a {
         font-weight: 500;
         text-align: center;
         padding: 0 25px;
+    }
+
+    .about_us_box .about_us_text h2 {
+        font-size: 30px;
+    }
+
+    .about_us_box .about_us_text .top_text, .contact_us_box .contact_us_text .top_text {
+        font-size: 13px;
+    }
+
+    .about_us_box .about_us_text h2, .contact_us_box .contact_us_text h2 {
+        font-size: 35px;
+    }
+
+    .contact_us_box .contact_us_text .open_time, .contact_us_box .contact_us_text .location,
+    .about_us_box .about_us_text p, .contact_us_box .contact_us_text p {
+        font-size: 14px;
+    }
+
+    .contact_us_box .contact_us_text .open_time svg, .contact_us_box .contact_us_text .location svg {
+        width: 70px;
+    }
+
+    .contact_us_box .contact_us_text .social_media svg {
+        width: 20px;
     }
 
     .gallery {
