@@ -468,7 +468,7 @@ header>img {
 
 .floating_img {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 30px;
     pointer-events: none;
     user-select: none;
@@ -481,7 +481,7 @@ header>img {
     transform: scaleX(-1);
 }
 
-.floating_img.fish {
+.floating_img.fish_img {
     bottom: 30px;
     right: 30px;
     top: auto;
@@ -669,12 +669,12 @@ header>img {
     transform: translateY(5px);
 }
 
-.gallery_img img {
+.gallery .gallery_img img {
     transform: scale(1.05);
     transition: 1s transform;
 }
 
-.gallery_img img:hover {
+.gallery .gallery_img img:hover {
     transition: 1.5s transform ease-out;
     transform: scale(1);
 }

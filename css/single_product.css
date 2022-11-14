@@ -1,0 +1,159 @@
+.single_product_cover {
+    height: 400px;
+    margin-top: 60px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/banner/baked-fish-dorado-with-lemon-herbs-baking-pan.jpg);
+}
+
+.single_product_cover::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.demo {
+    width: 40%;
+    min-height: 250px;
+}
+
+.lightSlider>li {
+    height: 100%;
+}
+
+.lSSlideOuter .lSPager.lSGallery a {
+    height: 60px;
+    display: block;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+    height: 100%;
+}
+
+.single_product_box {
+    padding: 80px 15px 50px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.single_product_details {
+    direction: rtl;
+    padding: 0 35px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.single_product_details .product_name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-right: -10px;
+}
+
+.single_product_details .product_details {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.single_product_details .product_price {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.single_product_details .product_price span,
+.single_product_details .product_num_box span {
+    color: #666;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.single_product_details .product_num_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.single_product_details .product_num_box input {
+    width: 60px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 20px;
+    background: transparent;
+}
+
+.single_product_details .product_num_box .value_button {
+    display: inline-block;
+    width: 36px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    line-height: 1;
+    background: #eee;
+    user-select: none;
+    cursor: pointer;
+}
+
+.single_product_details .product_button button {
+    display: inline-block;
+    background-color: #b12251;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 8px 12%;
+    font-size: 15px;
+    border: none;
+    font-family: 'tajawal', 'Roboto', sans-serif;
+}
+
+.single_product_page .products_cover {
+    max-width: 1200px;
+    padding: 50px 15px;
+}
+
+.single_product_page .products_box .product {
+    width: 22%;
+    height: 260px;
+}
+
+.single_product_page .products_cover .more_products {
+    margin: 30px 0 30px;
+}
+
+@media (max-width: 775px) {
+    .single_product_cover {
+        height: 250px;
+    }
+
+    .single_product_box div {
+        width: 100%;
+    }
+
+    .single_product_details {
+        padding: 30px 20px;
+    }
+
+    .single_product_details .product_button button {
+        padding: 8px 60px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .single_product_page .products_box .product {
+        width: 48.2%;
+        height: 52vw;
+    }
+}
