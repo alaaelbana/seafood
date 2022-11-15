@@ -1,0 +1,160 @@
+.contact_page {
+    direction: rtl;
+}
+
+.contact_box {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact_box .general_info {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+
+.contact_box .general_info div {
+    color: #353535;
+    font-size: 22px;
+    font-weight: 600;
+    width: 33.3%;
+    letter-spacing: .5px;
+}
+
+.contact_box .general_info label, .contact_box .general_info a {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(71, 137, 180);
+    margin-top: 7px;
+}
+
+.contact_box .form_box {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact_box .form_box .input_box {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.contact_box .form_box .input_box input, .contact_box .form_box .input_box textarea {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 0;
+    background-color: #f5f5f5;
+    height: 50px;
+}
+
+.contact_box .form_box .input_box textarea {
+    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.contact_box .form_box .input_box label {
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    display: inline-block;
+    color: #333;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+
+.contact_box .form_box .input_box.w-50 {
+    width: 50%;
+}
+
+.contact_box .form_box .input_box.submit {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact_box .form_box .input_box button {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 120px;
+    line-height: 55px;
+    border: 1px solid #353535;
+    background-color: #353535;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s background-color, .5s color;
+}
+
+.contact_box .form_box .input_box button:hover {
+    background-color: #3879a5;
+    border-color: #3879a5;
+}
+
+.contact_box .about_us_box {
+    margin: 80px 0 0;
+    padding: 0;
+}
+
+.contact_box .about_us_box .about_us_title {
+    margin: 0;
+    width: 100%;
+}
+
+.about_us_text_box .about_us_text {
+    padding-top: 40px;
+}
+
+.about_us_title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.about_us_title::after {
+    content: '';
+    width: 55px;
+    height: 1.5px;
+    position: absolute;
+    background-color: rgba(96, 166, 212, 0.9);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 775px) {
+
+    .contact_box .general_info {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact_box .general_info div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact_box .form_box .input_box.w-50 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact_box {
+        padding: 20px 0;
+    }
+}

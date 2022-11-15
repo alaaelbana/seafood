@@ -5,117 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osama gouda</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="imgs/logo.ico" />
-    <link rel="apple-touch-icon" type="image/png" href="imgs/logo.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.ico" />
-    <!-- style -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <meta name="description" content="description">
+    <meta name="theme-color" content="#1e2024" />
+    <link rel="apple-touch-icon" href="imgs/food.png">
+    <link rel="shortcut icon" href="imgs/food.png">
+    <title>seafood</title>
     <link rel="stylesheet" href="css/fonts-Roboto-Tajawal.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="menu_btn"><i class="material-icons-outlined">menu</i></div>
-        <a class="logo" href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+        <a class="logo" href="index.html"><img src="imgs/food.png" alt="logo"></a>
         <div class="header_links">
             <div class="link">
-                <a href="index.html">Home</a>
+                <a href="index.html">الرئيسية</a>
             </div>
             <div class="link">
-                <a href="shop.html">Our Shop</a>
+                <a href="shop.html">المنيو</a>
             </div>
             <div class="link">
-                <a href="about.html">About Us</a>
-            </div>
-            <div class="link">
-                <a class="active" href="Contact.html">Contact</a>
+                <a class="active" href="contact.html">تواصل معنا</a>
             </div>
         </div>
-        <a href="cart.html" class="card">
-            <i class="material-icons-outlined"> shopping_cart </i>
-            <div class="cart_text">Cart (<span>2</span>)</div>
+        <a href="cart.html" class="cart" dir="rtl">
+            <i class="material-icons-outlined"> shopping_bag </i>
+            <div class="cart_text">طلبك (<span>2</span>)</div>
         </a>
+        <img src="imgs/background_white.jpg" alt="">
     </header>
-    <section class="shop_banner cart_banner">
-        <h1><span></span>Contact Us<span></span></h1>
-    </section>
-    <section>
-        <div class="contact_box">
-            <div class="general_info">
-                <div class="email_box">
-                    Email:
-                    <a href="mailto:sikalatchi@yahoo.com">sikalatchi@yahoo.com</a>
+    <div class="contact_page">
+        <section>
+            <div class="contact_box">
+                <div class="about_us_box">
+                    <div class="about_us_title">
+                        ارسل رسالة
+                    </div>
                 </div>
-                <div class="phone_box">
-                    Phone:
-                    <label for="">+20 1223291155</label>
-                </div>
-                <div class="social_box">
-                    Social:
-                    <a href="#">Facebook</a>
-                </div>
+                <form action="#" class="form_box">
+                    <div class="input_box w-50">
+                        <label for="">الاسم الاول *</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="input_box w-50">
+                        <label for="">اسم العائلة *</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="input_box">
+                        <label for="">البريد الإلكتروني *</label>
+                        <input type="email" placeholder="">
+                    </div>
+                    <div class="input_box">
+                        <label for="">رقم الهاتف</label>
+                        <input type="tel" placeholder="">
+                    </div>
+                    <div class="input_box">
+                        <label for="">الرسالة *</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input_box submit">
+                        <button>ارسال</button>
+                    </div>
+                </form>
             </div>
-            <div class="about_us_box">
-                <div class="about_us_title">
-                    Send Massage
-                </div>
-            </div>
-            <form action="#" class="form_box">
-                <div class="input_box w-50">
-                    <label for="">first name *</label>
-                    <input type="text" placeholder="">
-                </div>
-                <div class="input_box w-50">
-                    <label for="">last name *</label>
-                    <input type="text" placeholder="">
-                </div>
-                <div class="input_box">
-                    <label for="">email address *</label>
-                    <input type="email" placeholder="">
-                </div>
-                <div class="input_box">
-                    <label for="">Phone</label>
-                    <input type="tel" placeholder="">
-                </div>
-                <div class="input_box">
-                    <label for="">Massage *</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="input_box submit">
-                    <button>Send</button>
-                </div>
-            </form>
-        </div>
-    </section>
+        </section>
+    </div>
+
     <div class="cover"></div>
-    <footer class="footer">
-        <div class="footer_logo"><img src="imgs/footer_logo.png" alt=""></div>
-        <div class="footer_linkes">
+    <footer>
+        <span>Copyright seafood 2022.</span>
+        <div class="links">
             <div class="link">
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html">الرئيسية</a>
             </div>
             <div class="link">
-                <a href="about.html">About Us</a>
+                <a href="shop.html">المنيو</a>
             </div>
             <div class="link">
-                <a href="shop.html">Our Shop</a>
-            </div>
-            <div class="link">
-                <a href="#">Terms & conditions</a>
-            </div>
-            <div class="link">
-                <a href="contact.html">Contact</a>
+                <a href="about.html">تواصل معنا</a>
             </div>
         </div>
-        <div class="footer_social">
-            <div class="social_link"><i class="fa-brands fa-facebook-f"></i></div>
-            <div class="social_link"><i class="fa-brands fa-instagram"></i></div>
-            <div class="social_link"><i class="fa-brands fa-whatsapp"></i></div>
-        </div>
-        <div class="copyright">&copy; 2022 All rights reserved.<span> Osama gouda</span> </div>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/custom.js"></script>

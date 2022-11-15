@@ -936,17 +936,20 @@ footer .links a {
     }
 
     .cart_box .cart_item_box .cart_item_mob .cart_item_price {
-        font-size: 13px;
+        font-size: 14px;
         color: #333;
         margin: 10px 0px;
+    }
+
+    .cart_box .cart_item_box .cart_item_img {
+        min-width: 100px;
+        height: 75px;
     }
 }
 
 
 @media (max-width: 600px) {
-    .cart_box .cart_item_box .cart_item_img {
-        min-width: 85px;
-    }
+
 
     .home_header .header_links.show {
         top: 73px;
@@ -1064,6 +1067,9 @@ footer .links a {
         width: 20%;
     }
 
+    .checkout_form .input_form.w-50 {
+        width: 100%;
+    }
 }
 
 
