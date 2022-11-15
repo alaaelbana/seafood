@@ -5,6 +5,11 @@
     background-size: cover;
     background-position: center;
     background-image: url(../imgs/banner/baked-fish-dorado-with-lemon-herbs-baking-pan.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
 }
 
 .single_product_cover::after {
@@ -15,6 +20,21 @@
     height: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.single_product_cover h1 {
+    font-size: 48px;
+    position: relative;
+    z-index: 9;
+}
+
+.single_product_cover span {
+    width: 5%;
+    position: relative;
+    transform: translateY(5px);
+    z-index: 9;
+    height: 2px;
+    background-color: #fff;
 }
 
 .demo {
@@ -37,7 +57,7 @@
 
 .single_product_box {
     padding: 80px 15px 50px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -119,22 +139,44 @@
 }
 
 .single_product_page .products_cover {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 50px 15px;
 }
 
 .single_product_page .products_box .product {
     width: 22%;
-    height: 260px;
+    height: 300px;
 }
 
 .single_product_page .products_cover .more_products {
     margin: 30px 0 30px;
 }
 
+@media (max-width: 1100px) {
+    .single_product_page .products_box .product {
+        width: 31%;
+        height: 300px;
+    }
+
+    .single_product_page .products_box .product:nth-child(4) {
+        display: none;
+    }
+}
+
 @media (max-width: 775px) {
     .single_product_cover {
         height: 250px;
+        gap: 10px;
+    }
+
+    .single_product_cover h1 {
+        font-size: 36px;
+    }
+
+    .single_product_cover span {
+        height: 1px;
+        width: 8%;
+        transform: translateY(3px);
     }
 
     .single_product_box div {
@@ -155,5 +197,9 @@
     .single_product_page .products_box .product {
         width: 48.2%;
         height: 52vw;
+    }
+
+    .single_product_page .products_box .product:nth-child(4) {
+        display: block;
     }
 }

@@ -1,4 +1,3 @@
-new WOW().init();
 $('.menu_btn').click(function () {
     $('header').toggleClass('home_header_hide')
     $('.header_links').toggleClass('show');
@@ -20,6 +19,9 @@ $('.products_filter_box .filter').click(function () {
 })
 $('.products_filter_box .all_filter').click(function () {
     $('.product:nth-child(-n+9)').fadeIn()
+})
+$('.single_product_page .products_filter_box .all_filter').click(function () {
+    $('.single_product_page .product').fadeIn()
 })
 $('.products_filter_box .fish_filter').click(function () {
     $('.fish').fadeIn()

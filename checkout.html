@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama gouda</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/logo.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="imgs/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.ico" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts-Roboto-Tajawal.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu_btn"><i class="material-icons-outlined">menu</i></div>
+        <a class="logo" href="index.html"><img src="imgs/food.png" alt="logo"></a>
+        <div class="header_links">
+            <div class="link">
+                <a class="active" href="index.html">الرئيسية</a>
+            </div>
+            <div class="link">
+                <a href="shop.html">المنيو</a>
+            </div>
+            <div class="link">
+                <a href="about.html">تواصل معنا</a>
+            </div>
+        </div>
+        <a href="cart.html" class="cart" dir="rtl">
+            <i class="material-icons-outlined"> shopping_bag </i>
+            <div class="cart_text">طلبك (<span>2</span>)</div>
+        </a>
+    </header>
+    <section class="checkout_page">
+        <form class="checkout_form" id="Form" action="#">
+            <div class="contact_information">
+                <div class="comple_info">
+                    يرجي ملئ البيانات التالية
+                </div>
+                <div class="contact_text">بيانات التواصل</div>
+                <div class="input_form w-50">
+                    <input type="email" placeholder="البريد الإلكتروني">
+                </div>
+                <div class="input_form w-50">
+                    <input type="tel" placeholder="رقم الهاتف">
+                </div>
+            </div>
+            <div class="shipping_address">
+                <div class="shipping_text">تفاصيل العنوان</div>
+                <div class="input_form w-50">
+                    <input type="text" placeholder="الاسم الاول">
+                </div>
+                <div class="input_form w-50">
+                    <input type="text" placeholder="الاسم الاخير">
+                </div>
+                <div class="input_form">
+                    <input type="text" placeholder="العنوان بالتفصيل">
+                </div>
+
+                <div class="input_form">
+                    <textarea name="" id="" placeholder="ملحوظة" cols="100%" rows="8" spellcheck="false"></textarea>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" id="save_info">
+                    <label for="save_info">الاحتفاظ بالبيانات لعملية الشراء التالية</label>
+                </div>
+                <div class="submit_form">
+                    <button>إرسال</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="cover"></div>
+    <footer>
+        <span>Copyright seafood 2022.</span>
+        <div class="links">
+            <div class="link">
+                <a class="active" href="index.html">الرئيسية</a>
+            </div>
+            <div class="link">
+                <a href="shop.html">المنيو</a>
+            </div>
+            <div class="link">
+                <a href="about.html">تواصل معنا</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

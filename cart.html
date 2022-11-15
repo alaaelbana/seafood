@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama gouda</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/logo.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="imgs/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.ico" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts-Roboto-Tajawal.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu_btn"><i class="material-icons-outlined">menu</i></div>
+        <a class="logo" href="index.html"><img src="imgs/food.png" alt="logo"></a>
+        <div class="header_links">
+            <div class="link">
+                <a class="active" href="index.html">الرئيسية</a>
+            </div>
+            <div class="link">
+                <a href="shop.html">المنيو</a>
+            </div>
+            <div class="link">
+                <a href="about.html">تواصل معنا</a>
+            </div>
+        </div>
+        <a href="cart.html" class="cart" dir="rtl">
+            <i class="material-icons-outlined"> shopping_bag </i>
+            <div class="cart_text">طلبك (<span>2</span>)</div>
+        </a>
+    </header>
+
+    <section class="cart_page">
+        <div class="cart_box">
+            <div class="cart_item_box">
+                <div class="cart_item_text">الطلب</div>
+            </div>
+            <div class="cart_item_price_box">
+                <div class="cart_item_price_text">السعر</div>
+                <div class="cart_item_quantity_text">العدد</div>
+                <div class="cart_item_total_text">المجموع</div>
+                <div class="cart_item_delete"></div>
+            </div>
+        </div>
+        <div class="cart_box">
+            <div class="cart_item_box">
+                <div class="cart_item_img">
+                    <img loading="lazy" src="imgs/product1.jpg" alt="">
+                </div>
+                <div class="cart_item_mob">
+                    <div class="cart_item_name">سمك مشوي</div>
+                    <div class="cart_item_price">200 جنيه</div>
+                    <div class="cart_item_quantity">
+                        <div class="value-button decrease">-</div>
+                        <input class="input_num" type="number" id="number" min="1" max="999" value="1" />
+                        <div class="value-button increase">+</div>
+                    </div>
+                </div>
+                <div class="cart_item_delete"><i class="material-icons-outlined">close</i></div>
+            </div>
+            <div class="cart_item_price_box">
+                <div class="cart_item_price">200 جنيه</div>
+                <div class="cart_item_quantity">
+                    <div class="value-button decrease">-</div>
+                    <input class="input_num" type="number" id="number" min="1" max="999" value="1" />
+                    <div class="value-button increase">+</div>
+                </div>
+                <div class="cart_item_total">400 جنيه</div>
+                <div class="cart_item_delete"><i class="material-icons-outlined">close</i></div>
+            </div>
+        </div>
+        <div class="cart_box">
+            <div class="cart_item_box">
+                <div class="cart_item_img">
+                    <img loading="lazy" src="imgs/product2.jpg" alt="">
+                </div>
+                <div class="cart_item_mob">
+                    <div class="cart_item_name">سمك مشوي</div>
+                    <div class="cart_item_price">200 جنيه</div>
+                    <div class="cart_item_quantity">
+                        <div class="value-button decrease">-</div>
+                        <input class="input_num" type="number" id="number" min="1" max="999" value="1" />
+                        <div class="value-button increase">+</div>
+                    </div>
+                </div>
+                <div class="cart_item_delete"><i class="material-icons-outlined">close</i></div>
+            </div>
+            <div class="cart_item_price_box">
+                <div class="cart_item_price">200 جنيه</div>
+                <div class="cart_item_quantity">
+                    <div class="value-button decrease">-</div>
+                    <input class="input_num" type="number" id="number" min="1" max="999" value="1" />
+                    <div class="value-button increase">+</div>
+                </div>
+                <div class="cart_item_total">400 جنيه</div>
+                <div class="cart_item_delete"><i class="material-icons-outlined">close</i></div>
+            </div>
+        </div>
+        <div class="cart_update_box">
+            <div class="cart_total_price">
+                <div class="suptotal">
+                    السعر
+                    <span>800 جنيه</span>
+                </div>
+                <div class="shipping">
+                    الضريبة
+                    <span>0 جنيه</span>
+                </div>
+                <div class="total">
+                    المجموع
+                    <span>800 جنيه</span>
+                </div>
+                <div class="checkout">
+                    <a href="checkout.html#Form">اتمام الطلب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cover"></div>
+    <footer>
+        <span>Copyright seafood 2022.</span>
+        <div class="links">
+            <div class="link">
+                <a class="active" href="index.html">الرئيسية</a>
+            </div>
+            <div class="link">
+                <a href="shop.html">المنيو</a>
+            </div>
+            <div class="link">
+                <a href="about.html">تواصل معنا</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.decrease').click(function () {
+            var value = $(this).parent().find('.input_num').val();
+            value < 1 ? value = 1 : '';
+            value--;
+            value == 0 ? value = 1 : '';
+            $(this).parent().find('.input_num').val(value);
+        })
+        $('.increase').click(function () {
+            var value = $(this).parent().find('.input_num').val();
+            value = isNaN(value) ? 0 : value;
+            value++;
+            $(this).parent().find('.input_num').val(value);
+        })
+    </script>
+</body>
+
+</html>
